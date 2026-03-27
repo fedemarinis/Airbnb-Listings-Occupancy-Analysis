@@ -25,90 +25,89 @@ Occupancy plays a central role, as it directly impacts the number of nights book
 
 ## 📊 Key Insights
 
-Several important patterns emerge from the analysis:
+- 📉 **Price vs Occupancy** → Higher prices tend to reduce booking frequency  
+- ⭐ **Ratings Matter** → Better reviews are linked to higher occupancy  
+- ⏱️ **Fast Responses Win** → Quick host replies increase booking likelihood  
+- 🔁 **Booking Experience** → Communication influences guest decisions  
+- 📅 **Seasonality** → Demand fluctuates across the year  
 
-- 📉 **Price vs Occupancy**  
-  Higher prices are consistently associated with lower occupancy levels
-
-- ⭐ **Ratings Matter**  
-  Listings with strong review scores achieve significantly better performance
-
-- ⏱️ **Fast Responses Win**  
-  Faster host response times are linked to higher booking rates
-
-- 🔁 **Booking Experience**  
-  Interaction and communication between hosts and guests influence decisions
-
-- 📅 **Seasonality Effects**  
-  Demand varies across the year, with clear high and low seasons
-
-Additionally, a significant portion of listings remains underutilized, highlighting substantial improvement potential.
+A relevant share of listings remains underutilized, suggesting strong room for improvement.
 
 ---
 
 ## 🧠 Approach
 
-The project follows an end-to-end data workflow:
+- Data exploration and cleaning using Python  
+- Handling missing values and inconsistencies  
+- Building a structured analytical database  
+- Creating visual dashboards to highlight patterns  
+- Interpreting results with clear assumptions  
 
-- Raw datasets were explored, cleaned, and standardized  
-- Missing values and inconsistencies were handled carefully  
-- Data was structured into a relational database for efficient querying  
-- Analytical views were built to highlight key performance drivers  
-- Insights were visualized through interactive dashboards  
+A key assumption used is that **unavailable listings are considered booked**, providing a consistent proxy for occupancy :contentReference[oaicite:1]{index=1}.
 
-A key assumption used in the analysis is that **unavailable listings are considered booked**, providing a consistent proxy for occupancy, even though it may slightly overestimate real values :contentReference[oaicite:1]{index=1}.
+---
+
+## 📊 Occupancy Insights
+
+![Occupancy Insights Dashboard](images/airbnb_occupancy_insights_dashboard.png)
+
+This view highlights the overall performance of listings and shows:
+
+- Average occupancy around **77%**
+- Strong **negative relationship between price and occupancy**
+- Clear **seasonal patterns** in demand
+- Differences across neighborhoods  
+
+It also reveals significant **unrealized value from unbooked nights**, pointing to optimization opportunities.
+
+---
+
+## 🔍 Drivers of Occupancy
+
+![Factors Impacting Occupancy Dashboard](images/factors_impacting_occupancy_dashboard.png)
+
+Beyond pricing, several factors influence performance:
+
+- ⭐ Higher ratings → higher occupancy  
+- ⏱️ Faster response times → better booking outcomes  
+- 🔁 Communication and trust → key in decision-making  
+
+These insights show that improving user experience can be as impactful as pricing changes.
 
 ---
 
 ## 🗂️ Data
 
-The analysis is based on three main datasets:
+The analysis is based on:
 
-- Listing characteristics (properties, hosts, attributes)  
-- Availability and pricing over time  
-- User reviews and ratings  
+- Listing data (properties, hosts, attributes)  
+- Calendar data (availability and prices over time)  
+- Review data (user feedback and ratings)  
 
-Together, these sources allow for a comprehensive view of both **supply-side behavior** and **performance outcomes**.
-
----
-
-## 🔍 What Drives Occupancy?
-
-The analysis highlights two main groups of drivers:
-
-### 1. Pricing Dynamics
-- Strong negative relationship between price and occupancy  
-- Opportunities to optimize pricing strategies across listings  
-
-### 2. Non-Pricing Factors
-- Guest satisfaction (ratings)
-- Host responsiveness
-- Communication quality and booking experience  
-
-This shows that performance is not only about pricing, but also about **trust, quality, and interaction**.
+Together, these sources provide a complete view of listing performance.
 
 ---
 
 ## 💡 Key Takeaways
 
-- Lowering prices can increase booking volume, but must be balanced carefully  
-- Improving listing quality and host behavior can significantly boost performance  
-- Even small improvements in key factors can lead to meaningful gains in occupancy  
-- There is large unrealized potential due to unbooked nights across listings :contentReference[oaicite:2]{index=2}  
+- Pricing is important, but not the only lever  
+- Host behavior and listing quality play a major role  
+- Small improvements can lead to meaningful gains  
+- There is large untapped potential in existing listings :contentReference[oaicite:2]{index=2}  
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-- Python (data cleaning & analysis)  
-- Pandas (data manipulation)  
-- SQL & PostgreSQL (data modeling)  
-- Tableau (data visualization)  
+- Python (Pandas)  
+- SQL & PostgreSQL  
+- Tableau  
+- Data visualization & modeling  
 
 ---
 
 ## 🚀 Final Thoughts
 
-This project shows how combining **data engineering, analysis, and visualization** can turn raw data into actionable insights.
+This project demonstrates how combining **data engineering, analytics, and visualization** can generate actionable insights.
 
-Improving occupancy is not driven by a single factor, but by a combination of **pricing strategy, user experience, and host behavior**. Leveraging these elements together creates a strong opportunity to enhance overall performance.
+Improving occupancy requires balancing **pricing strategies with user experience and host performance**, unlocking value across the platform.
